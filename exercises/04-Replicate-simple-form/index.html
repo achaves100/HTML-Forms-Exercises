@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			table,
+			th,
+			td {
+				border-style: double;
+				border-collapse: collapse;
+			}
+
+			th,
+			td {
+				padding: 5px;
+				text-align: left;
+			}
+
+			th {
+				background-color: #e5dfff;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<table style="width: 400px">
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" name="gender" value="male" />Male<br />
+						<input type="radio" name="gender" value="male" />Female<br />
+					</td>
+				</tr>
+				<tr>
+					<td>Eye Color</td>
+					<td>
+						<select id="Dropdown" name="EyeColor">
+							<option value="Select">Slect...</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" name="AllApply" value="6Feet" />
+						<label for="6Feet">Over 6 feet tall</label><br />
+						<input type="checkbox" name="AllApply" value="200Pounds" />
+						<label for="AllApply">Over 200 pounds</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<p>Describe your athetlic ability:</p>
+						<textarea name="athetlic" rows="5" cols="50"></textarea>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
